@@ -1,2 +1,5 @@
-﻿  Exception Handling and Unit-Testing.vcxproj -> \\cs1\2019\talmaw19\CS273\Homework\Exception Handling and Unit-Testing\Debug\Exception Handling and Unit-Testing.exe
+﻿  readint.cpp
+\\cs1\2019\talmaw19\cs273\homework\exception handling and unit-testing\exception handling and unit-testing\readint.cpp(30): warning C4101: 'e': unreferenced local variable
+\\cs1\2019\talmaw19\cs273\homework\exception handling and unit-testing\exception handling and unit-testing\readint.cpp(34): warning C4101: 'ex': unreferenced local variable
+  Exception Handling and Unit-Testing.vcxproj -> \\cs1\2019\talmaw19\CS273\Homework\Exception Handling and Unit-Testing\Debug\Exception Handling and Unit-Testing.exe
   Exception Handling and Unit-Testing.vcxproj -> \\cs1\2019\talmaw19\CS273\Homework\Exception Handling and Unit-Testing\Debug\Exception Handling and Unit-Testing.pdb (Full PDB)
