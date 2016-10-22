@@ -1,4 +1,4 @@
-#include <iostream>
+io#include <iostream>
 #include <stdexcept>
 #include "readint.h"
 using namespace std;
@@ -11,28 +11,19 @@ int main()
 	cout << "high: ";
 	cin >> high;
 	cout << "low: ";
-	cin >> low;
+	cin >> low; 
 
 
-	try
+	try // asks to user to put a number within the valid range.. and displays the number they have inputed 
 	{
-		int number = read_int("Please enter a number within the range: ", low, high);
+		int number = read_int("Please enter a number within the range: ", low, high); 
 		cout << "You entered " << number << endl;
 
 
-	}
-	catch (invalid_argument &e) {
+	}// if number not in range it catches 
+	catch (invalid_argument &e) { // catches the error and displays the user that they put a number putside the range 
 
 		cerr << "Exception: You supplied an invalid argument for read_int! Try Again! \n";
 	}
-	/*	catch (range_error &e)
-		{
-			cerr << " "
-		}*/
-	catch (ios_base::failure &ex) // 
-	{
-		cout << " you have entered out of the range of the number, please enter an integer, no symbols " << endl; 
-		cin.clear();
-		cin.ignore(numeric_limits<int>::max());
-	}
+
 }
