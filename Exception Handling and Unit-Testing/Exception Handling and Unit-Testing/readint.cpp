@@ -20,18 +20,19 @@ int read_int(const string &prompt, int low, int high)
 		try {
 			cout << prompt;
 			cin >> num;
-			// checks if the number inputed is in between low and high if not  
+			// checks if the number inputed is in between low and high 
 			if (num <= low || num >= high)
 			{
+				// if range isnt between high and low it displays this
 				throw (range_error("the number you have entered is outside the range ")); 
 			}
 			return num;
 		}
-		catch (const range_error &e)
+		catch (range_error &e)
 		{
-			cout << "the you entered is out of range please try again!" << endl;
+			cout << e.what() << endl;
 		}
-		catch (ios_base::failure& ex)
+		catch (ios_base::failure& e)
 		{
 			cout << "Bad numeric string -- try again\n";
 			// Reset the error flag
